@@ -39,7 +39,19 @@ utf8mb4
 
 ## 配置centos7对外开放端口
 
-参考CSDN 的一篇文章[地址](https://blog.csdn.net/xingyue425/article/details/53911479)
+centos查询端口是不是开放的
+```
+firewall-cmd --permanent --query-port=8080/tcp
+```
+添加对外开放端口
+```
+firewall-cmd --permanent --add-port=8080/tcp
+```
+重启防火墙
+```
+firewall-cmd --reload
+```
+参考文章[地址](https://blog.csdn.net/xingyue425/article/details/53911479)
 
 ## 启动项目
 ```
