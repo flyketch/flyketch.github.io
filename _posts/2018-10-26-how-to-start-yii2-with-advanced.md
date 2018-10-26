@@ -19,4 +19,18 @@ composer create-project --prefer-dist yiisoft/yii2-app-advanced yii-application
 ```
 php init
 ```
-来初始化项目允许环境
+来初始化项目允许环境。
+
+初始化项目后，配置数据库信息
+
+### 3、创建postgres 数据库
+```
+docker run --name yii2pg -e POSTGRES_PASSWORD=123456789 -p 54321:5432 -d postgres
+```
+此时用户名为postgres, 数据库为postgres。
+
+数据库信息配置完成后，通过
+```
+php yii migrate
+```
+来创建数据库信息。
