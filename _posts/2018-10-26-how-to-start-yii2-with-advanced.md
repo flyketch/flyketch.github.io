@@ -141,3 +141,8 @@ apt-get install php7.0-fpm
 安装完成后，访问localhost 会出现502错误
 解决方法参照stackoverflow[nginx: connect() failed (111: Connection refused) while connecting to upstream
 ](https://stackoverflow.com/questions/21524373/nginx-connect-failed-111-connection-refused-while-connecting-to-upstream)
+
+### 参考文章
+1、[github](https://github.com/mickgeek/yii2-advanced-one-domain-config)
+
+2、[yii2](https://www.yiiframework.com/wiki/799/yii2-app-advanced-on-single-domain-apache-nginx)
