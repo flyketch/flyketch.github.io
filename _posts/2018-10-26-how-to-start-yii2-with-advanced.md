@@ -137,6 +137,7 @@ docker-compose 起来后，进入nginx容器内，安装php环境
 apt-get update
 apt-get install php
 apt-get install php7.0-fpm
+apt-get install php7.0-pgsql
 ```
 安装完成后，访问localhost 会出现502错误
 解决方法参照stackoverflow [nginx: connect() failed (111: Connection refused) while connecting to upstream
