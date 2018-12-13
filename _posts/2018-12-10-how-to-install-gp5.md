@@ -36,6 +36,19 @@ c、通过vagrant up启动虚拟机。
 gpseginstall -f /home/gpadmin/gpconfig/seglist
 ```
 完成后要添加软链接。
+```
+[gpadmin@4197592bf6c0 ~]$ gpssh -f gpconfig/seg-all
+=> pwd
+[sdw1] /home/gpadmin
+[sdw2] /home/gpadmin
+=> ls
+[sdw1] greenplum-db-5.14.0  greenplum-db-5.14.0.tar
+[sdw2] greenplum-db-5.14.0  greenplum-db-5.14.0.tar
+=>
+=> ln -s greenplum-db-5.14.0 greenplum-db
+[sdw1]
+[sdw2]
+```
 
 参考文章[静心docker安装greenplum集群](https://gitop.gitee.io/blog/post/install-greenplum-in-docker/)
 
