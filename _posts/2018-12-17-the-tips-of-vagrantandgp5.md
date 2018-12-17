@@ -1,7 +1,7 @@
 ## vagrant 和 gp5的一些基本命令
 
 ### vagrant 常用命令
-![vagrant](./images/vagrant.png)
+![vagrant](/assets/images/vagrant.png)
 
 ### gp5 常用命令
 ```
