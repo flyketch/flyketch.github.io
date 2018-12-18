@@ -12,3 +12,9 @@ gpstate     # 查看GP运行状态
 gprecoverseg     # 恢复挂掉的节点
 gprecoverseg -r     # 恢复节点的角色
 ```
+
+### what's more
+
+- 通过tpc-ds 可以生成gp测试数据，参考文章[TPC_DS](https://github.com/pivotalguru/TPC-DS)
+
+- 通过gpcopy 来进行数据迁移
