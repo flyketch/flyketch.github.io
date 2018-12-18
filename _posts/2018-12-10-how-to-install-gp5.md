@@ -11,15 +11,24 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "mdw" do |mdw|
     mdw.vm.network "private_network", ip: "192.168.56.101"
+    mdw.vm.hostname = "mdw"
   end
 
   config.vm.define "sdw1" do |s|
     s.vm.network "private_network", ip: "192.168.56.102"
+    s.vm.hostname = "sdw1"
   end
 
   config.vm.define "sdw2" do |s|
     s.vm.network "private_network", ip: "192.168.56.103"
+    s.vm.hostname = "sdw2"
   end
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+    v.cpus = 1
+  end
+
 end
 ```
 
