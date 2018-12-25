@@ -22,15 +22,17 @@ make
 make install
 ```
 - 6、安装完成后，设置共享库 和 环境变量
-### a、共享库
+##### a、共享库
 ```
 vi ~/.bash_profile
+
 LD_LIBRARY_PATH=/usr/local/pgsql/lib
 export LD_LIBRARY_PATH
 ```
-### b、环境变量
+##### b、环境变量
 ```
 vi ~/.bash_profile
+
 PATH=/usr/local/pgsql/bin:$PATH
 export PATH
 export PGDATA="$HOME/pgsql"
