@@ -23,13 +23,16 @@ make install
 ```
 - 6、安装完成后，设置共享库 和 环境变量
 ##### a、共享库
+
 ```
 vi ~/.bash_profile
 
 LD_LIBRARY_PATH=/usr/local/pgsql/lib
 export LD_LIBRARY_PATH
 ```
+
 ##### b、环境变量
+
 ```
 vi ~/.bash_profile
 
@@ -37,7 +40,9 @@ PATH=/usr/local/pgsql/bin:$PATH
 export PATH
 export PGDATA="$HOME/pgsql"
 ```
+
 - 7、初始化数据库
+
 ```
 initdb
 ```
@@ -45,16 +50,21 @@ initdb
 ### 连接postgres 数据库
 
 - 1、修改PGDATA 目录下的pg_hba.conf 文件，添加
+
 ```
 host    all             all             192.168.3.0/24          trust
 ```
+
 上面规则可参考[文章](https://blog.csdn.net/u010936475/article/details/52729605)
 
 - 2、修改PGDATA 目录下的postgresql.conf 文件
+
 ```
 listen_addresses = '*'          # what IP address(es) to listen on;
 ```
+
 - 3、重启数据库
+
 ```
 pg_ctl restart
 ```
