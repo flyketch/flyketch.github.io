@@ -25,17 +25,14 @@ make install
 ### a、共享库
 ```
 vi ~/.bash_profile
-
 LD_LIBRARY_PATH=/usr/local/pgsql/lib
 export LD_LIBRARY_PATH
 ```
 ### b、环境变量
 ```
 vi ~/.bash_profile
-
 PATH=/usr/local/pgsql/bin:$PATH
 export PATH
-
 export PGDATA="$HOME/pgsql"
 ```
 - 7、初始化数据库
