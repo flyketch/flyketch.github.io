@@ -27,3 +27,8 @@ gprecoverseg -r     # 恢复节点的角色
 ```
 host  all   gpadmin   172.16.1.201/32    trust
 ```
+
+- gpcopy 示例如下
+```
+nohup gpcopy --source-host gpstage1 --source-port 5432 --source-user gpadmin --dest-host gppro1 --dest-port 5432 --dest-user gpadmin --full --truncate --no-distribution-check --jobs 1 --validate count > gpcopy.20181225.1024.log &
+```
