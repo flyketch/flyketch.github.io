@@ -11,5 +11,13 @@ ImportError: No module named site
 
 ### *<font color='green'>解决方案</font>*
 
-`参考文章` [链接](https://unix.stackexchange.com/questions/295116/yum-error-no-module-named-site)
+```bash
+unset PYTHONPATH
 
+## to use the system default ##
+unset PYTHONHOME  
+```
+
+### 参考文章
+
+- 1、[yum error](https://unix.stackexchange.com/questions/295116/yum-error-no-module-named-site)
