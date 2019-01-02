@@ -6,7 +6,9 @@
 ### gp5 常用命令
 ```
 gpstart     # 启动
+gpstart -m   # 仅启动master 节点
 gpstop     # 停止
+gpstop -r   # 重启数据库
 gpstop -u     # 修改参数后，不用重启gp
 gpstate     # 查看GP运行状态
 gprecoverseg     # 恢复挂掉的节点
