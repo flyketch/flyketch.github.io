@@ -11,3 +11,16 @@ select count(1) from pg_stat_activity;
 ```
 select * from pg_stat_activity;
 ```
+
+### Vim
+
+- vim 字符编码修改为utf-8
+
+``` bash
+vim ~/.vimrc
+
+`then add `
+set encoding=utf-8
+set langmenu=zh_CN.UTF-8
+language message zh_CN.UTF-8
+```
