@@ -3,13 +3,18 @@
 ### Postgres
 
 - 查看数据库连接的用户总数
-```
+```bash
 select count(1) from pg_stat_activity;
 ```
 
 - 查看所有连接的用户信息
-```
+```bash
 select * from pg_stat_activity;
+```
+
+- 切换数据库
+```bash
+one=# \c two
 ```
 
 ### Vim
