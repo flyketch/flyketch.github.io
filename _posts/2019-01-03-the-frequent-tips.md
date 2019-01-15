@@ -24,8 +24,14 @@ one=# \c two
 ``` bash
 vim ~/.vimrc
 
-`then add `
+`then add`
 set encoding=utf-8
 set langmenu=zh_CN.UTF-8
 language message zh_CN.UTF-8
 ```
+
+### GreenPlum
+
+- gpfdist 使用
+
+[GreenPlum 集群 gpfdist 实战](https://blog.csdn.net/mchdba/article/details/72540806)
