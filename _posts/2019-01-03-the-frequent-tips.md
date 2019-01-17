@@ -19,7 +19,8 @@ one=# \c two
 
 - 显示查询时间
 ```bash
-six=# \timing
+six=# \timing on 
+default off
 ```
 
 ### Vim
