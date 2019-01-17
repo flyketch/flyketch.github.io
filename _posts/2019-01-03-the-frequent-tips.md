@@ -17,6 +17,11 @@ select * from pg_stat_activity;
 one=# \c two
 ```
 
+- 显示查询时间
+```bash
+six=# \timing
+```
+
 ### Vim
 
 - vim 字符编码修改为utf-8
@@ -35,3 +40,16 @@ language message zh_CN.UTF-8
 - gpfdist 使用
 
 [GreenPlum 集群 gpfdist 实战](https://blog.csdn.net/mchdba/article/details/72540806)
+
+
+### Shell
+
+- 更改文件里面空格为 |
+```bash
+sed -i 's/\s\+/|/g' filename
+```
+
+- linux查看文件有多少行
+```bash
+wc -l filename
+```
