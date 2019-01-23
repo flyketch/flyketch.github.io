@@ -23,7 +23,9 @@ server 的bucket 存放在/data 目录下，每一个bucket 就是一个文件�
 ``` bash
 gpcheckcloud -t > /home/gpadmin/s3.conf
 ```
+
 修改配置文件
+
 ``` bash
 secret = "local-credential"
 accessid = "local-identity"
@@ -33,10 +35,13 @@ encryption = false
 ```
 
 - 检查配置文件
+
 ``` bash
 gpcheckcloud -c "s3://192.168.1.15:8888/testbucket config=s3.conf"
 ```
+
 正确则会返回
+
 ```
 Your configuration works well.
 ```
@@ -74,7 +79,7 @@ CREATE WRITABLE EXTERNAL TABLE w_two (like two) location
 'text' (delimiter as '|');
 ```
 
-### two.text
+### two.txt
 like this 
 ``` bash
 9397688616950152282|1529454007|order|浏览商品|{"name":"watch","city":"长沙"}|2018-06-20
