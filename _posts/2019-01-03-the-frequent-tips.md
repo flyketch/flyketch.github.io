@@ -43,7 +43,9 @@ language message zh_CN.UTF-8
 [GreenPlum 集群 gpfdist 实战](https://blog.csdn.net/mchdba/article/details/72540806)
 
 - gpload 使用
+
 [gpload 简介](https://gp-docs-cn.github.io/docs/utility_guide/admin_utilities/gpload.html)
+
 [Greenplum使用gpload通过gpfdist实现文件的高速加载](https://blog.csdn.net/jiangshouzhuang/article/details/51817520)
 
 ### Shell
