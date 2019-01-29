@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   这是flyketch的博客，欢迎交流、沟通。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: flyketch
 github_username:  flyketch
 
 # Build settings

@@ -79,7 +79,7 @@ CREATE WRITABLE EXTERNAL TABLE w_two (like two) location
 'text' (delimiter as '|');
 ```
 
-### two.txt
+### 3、two.txt
 like this 
 ``` bash
 9397688616950152282|1529454007|order|浏览商品|{"name":"watch","city":"长沙"}|2018-06-20
@@ -88,6 +88,6 @@ like this
 9397688616950152283|1529454007|browseGoods|订单付款|{"name":"watch","city":"深圳","brand":"Apple","price":8510.112}|2018-06-20
 ```
 
-### tips 
+### 4、tips
 
 使用s3 协议进行数据装载时候，一定要记得保证GP 环境时间 和 S3 服务器时间一致（不区分时区）。
