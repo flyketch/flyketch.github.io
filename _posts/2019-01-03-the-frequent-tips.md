@@ -59,3 +59,19 @@ sed -i 's/\s\+/|/g' filename
 ```bash
 wc -l filename
 ```
+
+### Jekyll
+
+- 安装Gemfile 文件依赖
+```
+bundle install
+```
+
+- 启动Jekyll 项目
+```
+jekyll serve
+
+or
+
+bundle exec jekyll serve
+```
