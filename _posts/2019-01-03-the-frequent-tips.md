@@ -63,11 +63,13 @@ wc -l filename
 ### Jekyll
 
 - 安装Gemfile 文件依赖
+
 ```
 bundle install
 ```
 
 - 启动Jekyll 项目
+
 ```
 jekyll serve
 
