@@ -77,3 +77,15 @@ or
 
 bundle exec jekyll serve
 ```
+
+### wordpress
+
+- wordpress 升级https 证书后访问
+
+修改wp-config.php 文件，添加如下代码
+
+```
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+    $_SERVER['HTTPS'] = 'on';
+}
+```
