@@ -60,6 +60,9 @@ sed -i 's/\s\+/|/g' filename
 wc -l filename
 ```
 
+- linux 软链接
+ln -s 源文件 目标文件
+
 ### Jekyll
 
 - 安装Gemfile 文件依赖
