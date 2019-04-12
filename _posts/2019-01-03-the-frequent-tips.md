@@ -23,6 +23,11 @@ six=# \timing on
 default off
 ```
 
+- 修改一列数据为小写
+```bash
+update table_name set column=lower(column);
+```
+
 ### Vim
 
 - vim 字符编码修改为utf-8
