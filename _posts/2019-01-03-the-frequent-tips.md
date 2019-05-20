@@ -41,6 +41,13 @@ set langmenu=zh_CN.UTF-8
 language message zh_CN.UTF-8
 ```
 
+### Vue
+
+- Vuex 详解
+
+[VueJS中学习使用Vuex详解](https://segmentfault.com/a/1190000015782272)
+
+
 ### GreenPlum
 
 - gpfdist 使用
