@@ -47,6 +47,10 @@ language message zh_CN.UTF-8
 
 [VueJS中学习使用Vuex详解](https://segmentfault.com/a/1190000015782272)
 
+- Vue 修改页面title
+
+[VUE 单页面应用 修改页面title](https://segmentfault.com/a/1190000010139214)
+
 
 ### GreenPlum
 
