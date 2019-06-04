@@ -108,3 +108,9 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
     $_SERVER['HTTPS'] = 'on';
 }
 ```
+
+### Idea
+
+- Idea 常用快捷键
+
+[IntelliJ Idea 常用快捷键列表](https://www.cnblogs.com/zhangpengshou/p/5366413.html) 
