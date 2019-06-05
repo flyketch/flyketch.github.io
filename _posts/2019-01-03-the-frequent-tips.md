@@ -51,6 +51,10 @@ language message zh_CN.UTF-8
 
 [VUE 单页面应用 修改页面title](https://segmentfault.com/a/1190000010139214)
 
+- Vue 中组件传值
+
+[Vue组件化及组件间传值](https://segmentfault.com/a/1190000011561859)
+
 
 ### GreenPlum
 
