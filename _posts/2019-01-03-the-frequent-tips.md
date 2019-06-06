@@ -41,6 +41,23 @@ set langmenu=zh_CN.UTF-8
 language message zh_CN.UTF-8
 ```
 
+### JavaScript
+
+- js 循环遍历树行数据
+
+[js实现无限层级树形数据结构](https://blog.csdn.net/Mr_JavaScript/article/details/82817177)
+
+```js
+function treeData(source, id, parentId, children){   
+    let cloneData = JSON.parse(JSON.stringify(source))
+    return cloneData.filter(father=>{
+        let branchArr = cloneData.filter(child => father[id] == child[parentId]);
+        branchArr.length>0 ? father[children] = branchArr : ''
+        return father[parentId] == 0        // 如果第一层不是parentId=0，请自行修改
+    })
+}
+```
+
 ### Vue
 
 - Vuex 详解
