@@ -58,6 +58,25 @@ function treeData(source, id, parentId, children){
 }
 ```
 
+### Element UI
+
+1、element ui 中tree 获取父节点信息
+
+- [官方指南](https://element.eleme.cn/#/zh-CN/component/tree)
+
+- [element tree根据子节点添加父级节点](http://www.imooc.com/wenda/detail/454697)
+
+- [element-ui Tree控件, 如何获取父节点的ID](https://segmentfault.com/q/1010000015922387)
+
+点击事件中添加信息
+
+```
+handleGroupClick(data, node) {
+    console.log(data)
+    console.log(node.parent.data.name)
+}
+```
+
 ### Vue
 
 - Vuex 详解
