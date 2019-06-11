@@ -77,6 +77,10 @@ handleGroupClick(data, node) {
 }
 ```
 
+2、element ui 中tree 自定义节点图标
+
+- [elementui tree自定义节点图标](https://segmentfault.com/q/1010000015215077)
+
 ### Vue
 
 - Vuex 详解
