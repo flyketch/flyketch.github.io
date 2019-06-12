@@ -58,6 +58,10 @@ function treeData(source, id, parentId, children){
 }
 ```
 
+- es6 怎么优雅的实现从数组中的对象取值并返回新的数组
+
+[ES6 怎么优雅的实现从数组中的对象取值并返回新的数组](https://segmentfault.com/q/1010000012302145/a-1020000012302361)
+
 ### Element UI
 
 1、element ui 中tree 获取父节点信息
