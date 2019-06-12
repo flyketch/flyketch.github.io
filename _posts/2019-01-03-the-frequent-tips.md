@@ -85,6 +85,16 @@ handleGroupClick(data, node) {
 
 - [elementui tree自定义节点图标](https://segmentfault.com/q/1010000015215077)
 
+3、element ui 中tree 设置默认选中点
+
+- [后台管理系统遇到的问题](https://www.jianshu.com/p/230c88a2c523)
+
+```
+menuIds.data.forEach(item => {
+    this.$refs.tree.setChecked(item,true);
+});
+```
+
 ### Vue
 
 - Vuex 详解
