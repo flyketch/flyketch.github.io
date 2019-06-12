@@ -95,6 +95,11 @@ menuIds.data.forEach(item => {
 });
 ```
 
+4、 ElementUI tree控件如何取得被选中的节点，以及父节点（即使没被全选）
+
+[ElementUI tree控件如何取得被选中的节点](https://segmentfault.com/q/1010000012309004)
+
+
 ### Vue
 
 - Vuex 详解
