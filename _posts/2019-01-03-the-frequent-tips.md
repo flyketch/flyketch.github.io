@@ -114,6 +114,10 @@ menuIds.data.forEach(item => {
 
 [Vue组件化及组件间传值](https://segmentfault.com/a/1190000011561859)
 
+- Vue input 赋值后无法修改
+
+原因： 没有赋初始值，赋初始值即可。
+
 
 ### GreenPlum
 
