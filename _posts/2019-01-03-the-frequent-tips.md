@@ -185,3 +185,11 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 - Idea 常用快捷键
 
 [IntelliJ Idea 常用快捷键列表](https://www.cnblogs.com/zhangpengshou/p/5366413.html) 
+
+### NodeJs
+
+- 查看npm命令全局安装的包所在的路径
+
+```
+npm root -g
+```
