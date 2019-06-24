@@ -193,3 +193,9 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 ```
 npm root -g
 ```
+
+- 查看webpack 版本
+
+```
+npm info webpack
+```
