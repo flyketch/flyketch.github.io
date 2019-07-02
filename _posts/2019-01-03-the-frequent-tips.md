@@ -66,6 +66,14 @@ function treeData(source, id, parentId, children){
 
 [ES6 怎么优雅的实现从数组中的对象取值并返回新的数组](https://segmentfault.com/q/1010000012302145/a-1020000012302361)
 
+- 网页中防止双击选中html中文字
+
+给span或其他的元素加上这个属性就可以了
+
+```
+onselectstart="return false"
+```
+
 ### Element UI
 
 1、element ui 中tree 获取父节点信息
@@ -102,6 +110,15 @@ menuIds.data.forEach(item => {
 4、 ElementUI tree控件如何取得被选中的节点，以及父节点（即使没被全选）
 
 [ElementUI tree控件如何取得被选中的节点](https://segmentfault.com/q/1010000012309004)
+
+
+5、Element UI tree 动态刷新节点
+
+参考官方文档 [https://element.eleme.cn/#/zh-CN/component/tree](renderContent)
+
+6、element ui 中tree 自定义节点点击
+
+- [elementui tree自定义节点点击](https://www.jianshu.com/p/5992a6ab82bf?tdsourcetag=s_pcqq_aiomsg)
 
 
 ### Vue
