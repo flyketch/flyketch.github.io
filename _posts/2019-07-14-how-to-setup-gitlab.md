@@ -14,6 +14,7 @@ services:
         GITLAB_OMNIBUS_CONFIG: |
           external_url 'http://127.0.0.1:9090'
           # gitlab_rails['time_zone'] = 'Asia/Shanghai'
+          # gitlab_rails['gitlab_shell_ssh_port'] = 2222
           # 需要配置到 gitlab.rb 中的配置可以在这里配置，每个配置一行，注意缩进。
           # 比如下面的电子邮件的配置：
           # gitlab_rails['smtp_enable'] = true
@@ -27,7 +28,7 @@ services:
           # gitlab_rails['gitlab_email_from'] = 'xxxx@xx.com'
       ports:
         - '9090:9090'
-        - '2422:22'
+        - '2222:22'
         - '8443:443'
       volumes:
         - /Users/steve/Workspaces/docker/gitlab/config:/etc/gitlab
