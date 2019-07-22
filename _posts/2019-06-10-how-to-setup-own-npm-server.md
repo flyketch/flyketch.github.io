@@ -38,3 +38,11 @@ password: jpicado
 ### 使用nexus 搭建npm 私有服务器
 
 - [简书](https://www.jianshu.com/p/1674a6bc1c12)
+
+```
+docker run -d --name nexus3 \
+ --restart=always \
+-p 8081:8081 \
+-v /opt/nexus-data:/nexus-data \
+sonatype/nexus3
+```
