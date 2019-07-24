@@ -46,3 +46,7 @@ docker run -d --name nexus3 \
 -v /opt/nexus-data:/nexus-data \
 sonatype/nexus3
 ```
+
+### 一些问题
+
+- [安装后出现silly decomposeActions install chalk@1.1.3](https://stackoverflow.com/questions/46043697/error-while-installing-bootstrap-4-beta-error-code-4048)
