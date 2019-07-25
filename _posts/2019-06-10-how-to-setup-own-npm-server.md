@@ -50,3 +50,112 @@ sonatype/nexus3
 ### 一些问题
 
 - [安装后出现silly decomposeActions install chalk@1.1.3](https://stackoverflow.com/questions/46043697/error-while-installing-bootstrap-4-beta-error-code-4048)
+
+
+### 附录
+
+-- conf/config.yaml
+
+```
+#
+# This is the config file used for the docker images.
+# It allows all users to do anything, so don't use it on production systems.
+#
+# Do not configure host and port under `listen` in this file
+# as it will be ignored when using docker.
+# see https://github.com/verdaccio/verdaccio/blob/master/wiki/docker.md#docker-and-custom-port-configuration
+#
+# Look here for more config file examples:
+# https://github.com/verdaccio/verdaccio/tree/master/conf
+#
+
+# path to a directory with all packages
+storage: /verdaccio/storage
+
+auth:
+  htpasswd:
+    file: /verdaccio/conf/htpasswd
+    # Maximum amount of users allowed to register, defaults to "+inf".
+    # You can set this to -1 to disable registration.
+    #max_users: 1000
+security:
+  api:
+    jwt:
+      sign:
+        expiresIn: 60d
+        notBefore: 1
+  web:
+    sign:
+      expiresIn: 7d
+
+# a list of other known repositories we can talk to
+uplinks:
+  npmjs:
+    url: https://registry.npm.taobao.org/
+
+packages:
+  '@jota/*':
+      access: $all
+      publish: $all
+
+  '@*/*':
+    # scoped packages
+    access: $all
+    publish: $all
+    proxy: npmjs
+
+  '**':
+    # allow all users (including non-authenticated users) to read and
+    # publish all packages
+    #
+    # you can specify usernames/groupnames (depending on your auth plugin)
+    # and three keywords: "$all", "$anonymous", "$authenticated"
+    access: $all
+
+    # allow all known users to publish packages
+    # (anyone can register by default, remember?)
+    publish: $all
+
+    # if package is not available locally, proxy requests to 'npmjs' registry
+    proxy: npmjs
+
+# To use `npm audit` uncomment the following section
+middlewares:
+  audit:
+    enabled: true
+
+# log settings
+logs:
+  - {type: stdout, format: pretty, level: trace}
+  #- {type: file, path: verdaccio.log, level: info}
+
+# publish offline
+publish:
+  allow_offline: true
+
+```
+
+- conf/htpasswd
+
+```
+jpicado:$6vkdNgRX2npc:autocreated 2017-07-11T18:48:38.003Z
+```
+
+- docker-compose.yml
+
+```
+version: '3.0'
+services:
+  verdaccio:
+    image: verdaccio/verdaccio
+    restart: always
+    container_name: verdaccio
+    ports:
+      - "4873:4873"
+    volumes:
+        - "./storage:/verdaccio/storage"
+        - "./conf:/verdaccio/conf"
+volumes:
+  verdaccio:
+    driver: local
+```
