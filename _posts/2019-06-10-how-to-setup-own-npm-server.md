@@ -54,7 +54,7 @@ sonatype/nexus3
 
 ### 附录
 
--- conf/config.yaml
+- conf/config.yaml
 
 ```
 #
@@ -132,7 +132,6 @@ logs:
 # publish offline
 publish:
   allow_offline: true
-
 ```
 
 - conf/htpasswd
