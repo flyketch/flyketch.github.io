@@ -16,6 +16,8 @@
 
 - Controller manager负责管理控制器，相当于“大总管”。
 
+- etcd保存了整个集群的状态。
+
 3、`Node节点`
 
 Node节点包括Docker、kubelet、kube-proxy、Fluentd、kube-dns（可选），还有就是Pod。
