@@ -167,6 +167,9 @@ wc -l filename
 - linux 软链接
 ln -s 源文件 目标文件
 
+- Linux 修改时间
+date -s  时分秒 ：修改时间
+
 ### Jekyll
 
 - 安装Gemfile 文件依赖
