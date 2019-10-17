@@ -219,3 +219,10 @@ npm root -g
 ```
 npm info webpack
 ```
+
+
+### Java
+
+- java版本比较大小
+
+[java实现版本比较](https://www.cnblogs.com/hdwang/p/8603061.html)
