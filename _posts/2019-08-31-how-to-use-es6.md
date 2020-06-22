@@ -10,3 +10,7 @@ var ss = a.replace(/\//g, '-') // 转换ok
 
 var cc = a.replace('/', '-') // 不能转换所有的
 ```
+
+> js 常用信息
+
+- [前端好文](https://segmentfault.com/a/1190000017577802)
