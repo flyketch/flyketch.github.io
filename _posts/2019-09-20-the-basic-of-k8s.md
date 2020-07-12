@@ -30,6 +30,10 @@ Node节点包括Docker、kubelet、kube-proxy、Fluentd、kube-dns（可选）�
 
 - Fluentd，主要负责日志收集、存储与查询。
 
+4、
+
 参考文章：
 
 - [10分钟看懂Docker和K8S](https://my.oschina.net/jamesview/blog/2994112)
+
+- [集群创建和Hello World](https://juejin.im/post/5efde9066fb9a07ead0f3d8d)
