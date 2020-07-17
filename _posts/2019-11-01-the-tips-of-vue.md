@@ -39,3 +39,7 @@ this.$route.query.title
 - 3、vue excel 文件导入导出
 
 参考vue-element-admin 中的导入导出进行使用
+
+- 4、vue 打包后可以看到源代码
+
+在 config/index.js 页面找到productionSourceMap:ture 改为 productionSourceMap:false
