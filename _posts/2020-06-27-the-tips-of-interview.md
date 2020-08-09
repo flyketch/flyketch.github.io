@@ -13,3 +13,7 @@
 > [Java 集合](https://juejin.im/post/6856550047338332168)
 
 > 数据库文档生成(screw)
+
+> [Redis的查漏补缺](https://juejin.im/post/6857667542652190728)
+
+> [Jvm 入门](https://juejin.im/post/6856958647445291021)
