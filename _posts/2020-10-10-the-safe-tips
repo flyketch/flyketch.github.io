@@ -44,3 +44,7 @@ http {
 ```
 $ curl https://example.com/static/js/other/zepto.js | openssl dgst -sha256 -binary | openssl enc -base64 -A
 ```
+
+### 参考资料
+
+-[SRI-Subresource Integrity](https://blog.csdn.net/zccccoooo/article/details/79127269)
