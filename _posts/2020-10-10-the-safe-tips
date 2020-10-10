@@ -47,4 +47,6 @@ $ curl https://example.com/static/js/other/zepto.js | openssl dgst -sha256 -bina
 
 ### 参考资料
 
--[SRI-Subresource Integrity](https://blog.csdn.net/zccccoooo/article/details/79127269)
+- [SRI-Subresource Integrity](https://blog.csdn.net/zccccoooo/article/details/79127269)
+
+- [nginx解决内容安全策略CSP](https://blog.csdn.net/m0_46266503/article/details/108500504)
