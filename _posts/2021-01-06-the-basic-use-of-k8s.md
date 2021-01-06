@@ -1,6 +1,6 @@
--- 部署简单的k8s 服务
+## 部署简单的k8s 服务
 
---- 部署业务应用
+### 部署业务应用
 
 > 创建deploy.yaml
 
@@ -39,7 +39,7 @@ kubectl apply -f deploy.yaml
 kebectl get pod -n handsonlab
 ```
 
---- 部署服务
+### 部署服务
 
 > 创建service.yaml
 
@@ -67,7 +67,7 @@ kubectl apply -f service.yaml
 kubectl get service -n handsonlab
 ```
 
---- 配置 ingress 开放外部访问
+### 配置 ingress 开放外部访问
 
 > 创建ingress.yaml
 
@@ -95,7 +95,7 @@ kubectl apply -f ingress.yaml
 kubectl get ingress -n handsonlab
 ```
 
---- 卸载资源
+### 卸载资源
 
 > 卸载ingress
 
