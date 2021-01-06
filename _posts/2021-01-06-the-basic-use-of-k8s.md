@@ -115,7 +115,7 @@ kubectl delete service myapp-service -n handsonlab
 kubectl delete deployment myapp-deployment -n handsonlab
 ```
 
---- 查看卸载结果
+### 查看卸载结果
 
 ```
 kubectl get all -n handsonlab
